@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ========== META & TITLE SECTION ========== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All Trending Prompts</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ========== FAVICON ========== -->
+  <link rel="icon" type="image/png" href="assets/Icons/Favicon_PromptGallery.png">
+</head>
+
+<body>
+  <!-- ========== HEADER SECTION ========== -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">All Trending Prompts</h1>
+      <p class="tag">
+        <img src="assets/Icons/instagram_logo.png" alt="Instagram" class="instagram-logo">
+        alihasnain.designs
+      </p>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT SECTION ========== -->
+  <main class="container main-content">
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+      <h2>Explore | Create | Share</h2>
+      <p class="lead">Simple gallery style page for prompts</p>
+    </section>
+
+    <!-- ========== SEARCH SECTION ========== -->
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input
+        type="text"
+        id="search-input"
+        class="search-input"
+        placeholder="Search prompts... (e.g. car, suit, snow)"
+        autocomplete="off"
+      />
+    </div>
+    <p id="results-count" class="results-count"></p>
+
+    <!-- ========== PROMPT CARDS SECTION (auto-generated) ========== -->
+    <section class="cards" id="cards-container">
+      <!-- Cards yahan JavaScript se automatically aayenge -->
+    </section>
+
+    <!-- ========== NO RESULTS MESSAGE ========== -->
+    <p id="no-results" class="no-results">Koi prompt nahi mila. Doosra keyword try karein.</p>
+
+    <!-- ========== LOAD MORE BUTTON ========== -->
+    <div class="load-more-wrap" id="load-more-wrap">
+      <button class="load-more-btn" id="load-more-btn">Load More Prompts</button>
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER SECTION ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>Created by alihasnain.designs</small>
+    </div>
+  </footer>
+
+  <!-- ========== DATA + APP SCRIPTS ========== -->
+  <script src="prompts-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
